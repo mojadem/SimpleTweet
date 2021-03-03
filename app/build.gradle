@@ -54,4 +54,8 @@ dependencies {
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
     // Use a toolbar
     implementation 'androidx.appcompat:appcompat:1.0.0'
+    // Toolbar scrolling
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0-rc01'
 }

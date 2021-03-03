@@ -5,13 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:background="@color/Light"
-    android:layout_margin="5dp">
+    tools:background="@color/Light">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tweetContainer">
+        android:id="@+id/tweetContainer"
+        android:layout_margin="10dp">
 
         <ImageView
             android:id="@+id/ivProfileImage"
@@ -20,7 +20,7 @@
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/tvScreenName"
+            android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
@@ -33,21 +33,48 @@
             android:id="@+id/tvBody"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tvScreenName"
+            android:layout_below="@+id/tvName"
             android:layout_marginStart="5dp"
             android:layout_marginTop="2dp"
             android:layout_toEndOf="@+id/ivProfileImage"
             android:textColor="@color/TextSub"
             tools:text="Dogecoin to the moon!" />
 
+        <TextView
+            android:id="@+id/tvScreenName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/tvName"
+            android:textColor="@color/Divider"
+            tools:text="\@elonmusk" />
+
+        <TextView
+            android:id="@+id/tvDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/tvScreenName"
+            android:textColor="@color/Divider"
+            android:text="@string/dot" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/tvDot"
+            android:textColor="@color/Divider"
+            tools:text="3m" />
+
+
     </RelativeLayout>
 
     <include
-        layout="@layout/divider_main"
         android:id="@+id/divider"
-        android:layout_height="1dp"
+        layout="@layout/divider_main"
         android:layout_width="match_parent"
-        android:layout_below="@+id/tweetContainer"
-        android:layout_marginTop="5dp"/>
+        android:layout_height="1dp"
+        android:layout_below="@+id/tweetContainer" />
 
 </RelativeLayout>

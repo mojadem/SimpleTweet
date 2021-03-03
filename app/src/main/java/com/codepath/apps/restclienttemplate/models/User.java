@@ -17,4 +17,8 @@ public class User {
 
         return user;
     }
+
+    public String getFormattedScreenName() {
+        return String.format("@%s", screenName);
+    }
 }
