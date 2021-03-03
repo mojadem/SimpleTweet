@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Dark">#263238</color>
+    <color name="Light">#37474f</color>
+    <color name="Divider">#b0bec5</color>
+    <color name="Accent">#64b5f6</color>
+    <color name="TextMain">#fafafa</color>
+    <color name="TextSub">#eeeeee</color>
+</resources>

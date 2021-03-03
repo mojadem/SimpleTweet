@@ -52,4 +52,6 @@ dependencies {
     implementation 'com.facebook.stetho:stetho:1.5.1'
     // Swipe to refresh
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+    // Use a toolbar
+    implementation 'androidx.appcompat:appcompat:1.0.0'
 }
