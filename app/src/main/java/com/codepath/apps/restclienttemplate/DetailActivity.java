@@ -4,8 +4,11 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.drm.DrmStore;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -27,6 +30,9 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarDetail);
+        setSupportActionBar(toolbar);
+
         TextView header = findViewById(R.id.tvHeader);
         header.setText("Tweet");
 
@@ -46,5 +52,21 @@ public class DetailActivity extends AppCompatActivity {
                 .load(tweet.user.profileImageUrl)
                 .circleCrop()
                 .into(ivProfileImage);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.back) {
+            // Returns to parent activity
+            finish();
+        }
+        return true;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present
+        getMenuInflater().inflate(R.menu.menu_sub, menu);
+        return true;
     }
 }

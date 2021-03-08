@@ -10,7 +10,7 @@
 
     <include
         layout="@layout/toolbar_sub"
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbarCompose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -19,7 +19,7 @@
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_below="@+id/toolbar"/>
+        android:layout_below="@+id/toolbarCompose"/>
 
     <RelativeLayout
         android:layout_width="match_parent"

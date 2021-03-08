@@ -11,7 +11,7 @@
 
     <include
         layout="@layout/toolbar_sub"
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbarDetail"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
 
@@ -22,13 +22,13 @@
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_below="@+id/toolbar"/>
+        android:layout_below="@+id/toolbarDetail"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
-        android:layout_below="@+id/toolbar">
+        android:layout_below="@+id/divider">
 
         <ImageView
             android:id="@+id/ivProfileImage"

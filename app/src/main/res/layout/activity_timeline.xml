@@ -21,7 +21,7 @@
 
             <include
                 layout="@layout/toolbar_main"
-                android:id="@+id/toolbar"
+                android:id="@+id/toolbarTimeline"
                 android:layout_height="?attr/actionBarSize"
                 android:layout_width="match_parent"/>
 
@@ -30,7 +30,7 @@
                 android:id="@+id/divider"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_below="@+id/toolbar"/>
+                android:layout_below="@+id/toolbarTimeline"/>
         </RelativeLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
