@@ -1,7 +1,10 @@
 package com.codepath.apps.restclienttemplate;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
+import android.drm.DrmStore;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -24,6 +27,9 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
+        TextView header = findViewById(R.id.tvHeader);
+        header.setText("Tweet");
+
         ivProfileImage = findViewById(R.id.ivProfileImage);
         tvBody = findViewById(R.id.tvBody);
         tvScreenName = findViewById(R.id.tvScreenName);
@@ -31,8 +37,6 @@ public class DetailActivity extends AppCompatActivity {
         tvTime = findViewById(R.id.tvTime);
 
         Tweet tweet = Parcels.unwrap(getIntent().getParcelableExtra("tweet"));
-
-
 
         tvBody.setText(tweet.body);
         tvName.setText(tweet.user.name);

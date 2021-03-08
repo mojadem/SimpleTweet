@@ -10,10 +10,12 @@
     tools:context=".DetailActivity">
 
     <include
-        layout="@layout/toolbar_main"
+        layout="@layout/toolbar_sub"
         android:id="@+id/toolbar"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent"/>
+        android:layout_width="match_parent">
+
+    </include>
 
     <include
         layout="@layout/divider_main"

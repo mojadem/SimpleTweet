@@ -9,12 +9,23 @@
         <item name="android:textColorPrimary">@color/TextMain</item>
         <item name="android:colorPrimaryDark">@color/Dark</item>
         <item name="android:colorAccent">@color/Accent</item>
+        <item name="colorControlNormal">@color/Accent</item>
+        <item name="colorControlActivated">@color/Accent</item>
+        <item name="colorControlHighlight">@color/Accent</item>
     </style>
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
 
+    </style>
+
+    <style name="counterText">
+        <item name="android:textColor">@color/TextSub</item>
+    </style>
+
+    <style name="counterOverride">
+        <item name="android:textColor">@color/Divider</item>
     </style>
 
 </resources>
