@@ -8,6 +8,7 @@
         -->
         <item name="android:textColorPrimary">@color/TextMain</item>
         <item name="android:colorPrimaryDark">@color/Dark</item>
+        <item name="android:colorAccent">@color/Accent</item>
     </style>
 
     <!-- Application theme. -->
