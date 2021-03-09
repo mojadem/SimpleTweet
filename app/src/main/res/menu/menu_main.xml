@@ -6,6 +6,5 @@
         android:id="@+id/compose"
         android:icon="@drawable/ic_baseline_add_24"
         android:title="Compose"
-        android:iconTint="@color/Accent"
         app:showAsAction="always" />
 </menu>
